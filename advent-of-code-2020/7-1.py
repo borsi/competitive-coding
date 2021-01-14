@@ -65,21 +65,3 @@ def calculate_bags_needed(startnode, graph):
             return 0
     find_all_successors(startnode, graph, bags)
     return bags
-
-
-""" FIRST PART
-
-oneshinybag = len(collect_predecessors('shiny gold', graph)) - 1
-print(oneshinybag)
-
-"""
-
-""" SECOND PART """
-print(calculate_bags_needed('shiny gold', graph))
-
-""" FUN PRINT
-# plt.tight_layout()
-nx.draw_networkx(graph, arrows=True)
-plt.savefig("g1.png", format="PNG")
-plt.clf()
-"""
